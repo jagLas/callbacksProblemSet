@@ -28,10 +28,20 @@ let result4 = none([4, -5, 7, -1], function(n) {
 console.log(result4);   // false
 *******************************************************************************/
 
-let none = function() {
+let none = function(array, cb) {
 
+    let res = array.filter(function(el){
+        if (cb(el)) {
+            return el;
+        }
+    })
+
+    if (res.length === 0) {
+        return true;
+    } else{
+        return false;
+    }
 };
-
 
 
 
