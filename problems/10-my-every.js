@@ -40,12 +40,6 @@ let hasO = function(string) {
     return string.includes('o');
 };
 
-debugger
-console.log(myEvery([4, 8, 6, 10], isEven));            // true
-console.log(myEvery([4, 7, 6, 10], isEven));            // false
-console.log(myEvery(['book', 'door'], hasO));           // true
-console.log(myEvery(['book', 'door', 'pen'], hasO));    // false
-
 
 
 
