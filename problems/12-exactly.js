@@ -27,10 +27,20 @@ console.log(result4); // true
 
 *******************************************************************************/
 
-let exactly = function() {
+let exactly = function(array, target, cb) {
+    let res = array.filter(function(el){
+        if (cb (el) === true) {
+            return el;
+        }
+    })
+
+    if (res.length === target) {
+        return true;
+    }
+
+    return false;
 
 };
-
 
 
 
